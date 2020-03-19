@@ -19,14 +19,6 @@
         // 与function didClickButtonGetUserCode()成对存在
         function completionForDidClickButtonGetUserCode(response){
             
-            // 在此处处理你的逻辑
-            // 成功返回的 response 结构类似 {"message":"工号获取成功","data":"BMW-AK47","code":"200"}，data 的内容就是工号，字符串类型
-            // 失败返回的 response 结构类似 {"message":"工号获取失败，因为该用户没有证书","data":"","code":"400"}，data 的内容就是工号，字符串类型
-            // ======>>>>>
-            // code here
-            // ======<<<<<
-            
-            
             // ======>>>>> 以下内容通常是可选的，但在双方联调解决错误时是必要的
             // 如果js在response获得了任何结果，需要报告给oc，以便于oc明确知晓本次交互过程是否完整
             // 举例
@@ -41,6 +33,14 @@
             };
             reportPerformReponse(report);
             // ======<<<<< 以上内容通常可是可选的，但在双方联调解决错误时是必要的
+            
+            
+            // 在此处处理你的逻辑
+            // 成功返回的 response 结构类似 {"message":"工号获取成功","data":"BMW-AK47","code":"200"}，data 的内容就是工号，字符串类型
+            // 失败返回的 response 结构类似 {"message":"工号获取失败，因为该用户没有证书","data":"","code":"400"}，data 的内容就是工号，字符串类型
+            // ======>>>>>
+            // code here
+            // ======<<<<<
             
         }
     
