@@ -1,15 +1,7 @@
 # native-js-hug
 原生应用于JS交互
 
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-    <meta charset="UTF-8">
-    <title>JS与OC互相调用DEMO</title>
-
-    <script>
-
-        // 此函数为js中触发获取工号的事件，oc不规定此函数的命名规则，oc只约定 expression 的数据结构，例如 tt.getUserCode 就是用来获取工号的，这个是双方约定好的。
+// 此函数为js中触发获取工号的事件，oc不规定此函数的命名规则，oc只约定 expression 的数据结构，例如 tt.getUserCode 就是用来获取工号的，这个是双方约定好的。
         function didClickButtonGetUserCode(){
         var expression =
         {
@@ -50,12 +42,3 @@
         function reportPerformReponse(report){
             window.webkit.messageHandlers.reportPerformReponse.postMessage(report);
         }
-
-    </script>
-</head>
-<body>
-
-    <input type="button" value="点击我获取工号" onclick="didClickButtonGetUserCode()">
-
-</body>
-</html>
