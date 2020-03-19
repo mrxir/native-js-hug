@@ -10,7 +10,7 @@
         function didClickButtonGetUserCode(){
         var expression =
         {
-            "method": "tt.getUserCode", // 必须写成 "method"，冒号右边的内容是双方约定好的
+            "method": "tt.getUserCode", // 必须写成 "method"，冒号右边的内容是双方约定好的，如果需要使用更多函数，双方增加约定即可
             "completion": "completionForDidClickButtonGetUserCode" // 必须写成 "completion"，冒号右边的内容是在本次js调用oc时临时约定的，oc会通过约定的函数去调用js，用以返回数据
         };
             window.webkit.messageHandlers.performAppleSelector.postMessage(expression);
@@ -34,9 +34,9 @@
             // reportPerformResult('你想要报告的内容');
             var report =
             {
-                "method": "reportPerformReponse", // 必须写成 "method"，冒号右边的内容是双方约定好的
-                "report_method": "tt.getUserCode",
-                "report_object": response  // 必须写成 "completion"，冒号右边的内容是在本次js调用oc时临时约定的，oc会通过约定的函数去调用js，用以返回数据
+                "method": "reportPerformReponse",   // 必须写成 "method": "reportPerformReponse"
+                "report_object": response,  // 必须写成 "report_object": response
+                "report_method": "tt.getUserCode" // "report_method": "tt.getUserCode" 代表向oc此次报告是关于获取工号的
             };
             reportPerformReponse(report);
             // ======<<<<< 以上内容通常可是可选的，但在双方联调解决错误时是必要的
