@@ -19,7 +19,9 @@
         // 与function didClickButtonGetUserCode()成对存在
         function completionForDidClickButtonGetUserCode(response){
             
-            // 在此处处理你的逻辑，预期的 response 结构为 {"message":"工号获取成功","data":"BMW-AK47","code":"200"}
+            // 在此处处理你的逻辑
+            // 成功返回的 response 结构类似 {"message":"工号获取成功","data":"BMW-AK47","code":"200"}，data 的内容就是工号，字符串类型
+            // 失败返回的 response 结构类似 {"message":"工号获取失败，因为该用户没有证书","data":"","code":"400"}，data 的内容就是工号，字符串类型
             // ======>>>>>
             // code here
             // ======<<<<<
