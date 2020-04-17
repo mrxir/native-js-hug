@@ -1,6 +1,6 @@
 # native-js-hug 原生应用于JS交互
 
-### html使用样例
+### html调用oc原生api(获取用户工号)使用样例
 [https://github.com/mrxir/native-js-hug/blob/master/native-js-hug/index.html](https://github.com/mrxir/native-js-hug/blob/master/native-js-hug/index.html)
 
 ## API说明
