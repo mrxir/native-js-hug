@@ -1,4 +1,8 @@
 # native-js-hug 原生应用于JS交互
+
+> html使用样例
+[https://github.com/mrxir/native-js-hug/blob/master/native-js-hug/index.html](https://github.com/mrxir/native-js-hug/blob/master/native-js-hug/index.html)
+
 * 此函数为js中触发获取工号的事件，oc不规定此函数的命名规则，oc只约定 expression 的数据结构，例如 tt.getUserCode 就是用来获取工号的，这个是双方约定好的。
 
 ```
@@ -55,3 +59,4 @@ function reportPerformReponse(report){
 }
 
 ```
+
